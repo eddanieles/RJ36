@@ -117,15 +117,30 @@ header a, a:visited {
 
 .msg{
     align-self: center;
-    /* font-size: xxx-large; */
-    font-size: 100vh; /* Fallback for browsers that do not support Custom Properties */
-    font-size: calc(var(--vh, 1vh) * 100);
+    font-size: xxx-large;
     font-weight: bold;
+    width: 50%;
 } 
 .signature{
     align-self: flex-end;
     font-size: xx-large;
     width: 50%;
+}
+
+@media only screen and (max-width: 900px) {
+    .msg{
+        align-self: center;
+        font-size: xxx-large;
+        font-size: 11vw;
+        font-weight: bold;
+        width: 100%;
+    } 
+    .signature{
+        align-self: flex-end;
+        font-size: xx-large;
+        font-size: 5vw;
+        width: 50%;
+    }
 }
 
 .clouds{
