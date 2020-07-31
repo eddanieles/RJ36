@@ -112,11 +112,14 @@ header a, a:visited {
     width: 50%;
     height: 70%;
     vertical-align: middle;
+    
 }
 
 .msg{
     align-self: center;
-    font-size: xxx-large;
+    /* font-size: xxx-large; */
+    font-size: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    font-size: calc(var(--vh, 1vh) * 100);
     font-weight: bold;
 } 
 .signature{
